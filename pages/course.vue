@@ -1,6 +1,5 @@
 <template>
-  <div
-    class="p-12 bg-gray-100 w-full h-full min-h-screen flex flex-col items-center">
+  
     <div class="prose mb-12">
       <h1>
         <span class="font-medium"
@@ -37,7 +36,7 @@
         <NuxtPage />
       </div>
     </div>
-  </div>
+
 </template>
 
 <script setup>
