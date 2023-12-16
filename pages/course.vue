@@ -1,16 +1,18 @@
 <template>
   <div>
-    <div class="prose mb-12">
+    <div class="mb-4 flex items-center justify-between w-full">
       <h1>
         <span class="font-medium">
           <span class="font-bold">{{ title }} </span>
         </span>
       </h1>
+
+      <UserCard />
     </div>
 
-    <div class="flex flex-row justify-center flex-grow w-full">
+    <div class="flex flex-row justify-center grow">
       <div
-        class="prose mr-4 p-8 bg-white rounded-md min-w-[20ch] max-w-[35ch] flex-1">
+        class="prose mr-4 p-8 bg-white rounded-md min-w-[20ch] max-w-[30ch]">
         <h3>Chapters</h3>
         <div
           v-for="chapter in chapters"
@@ -32,7 +34,7 @@
         </div>
       </div>
 
-      <div class="prose p-12 bg-white rounded-md w-[65ch] max-w-none flex-1">
+      <div class="prose p-12 bg-white rounded-md min-w-[75ch]">
         <NuxtErrorBoundary>
           <NuxtPage />
           <template #error="{ error }">
